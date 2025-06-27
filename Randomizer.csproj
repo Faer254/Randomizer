@@ -1,0 +1,137 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\fonts\Nunito-Black.ttf" />
+    <None Remove="resources\fonts\Nunito-BlackItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-Bold.ttf" />
+    <None Remove="resources\fonts\Nunito-BoldItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-ExtraBold.ttf" />
+    <None Remove="resources\fonts\Nunito-ExtraBoldItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-ExtraLight.ttf" />
+    <None Remove="resources\fonts\Nunito-ExtraLightItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-Italic-VariableFont_wght.ttf" />
+    <None Remove="resources\fonts\Nunito-Italic.ttf" />
+    <None Remove="resources\fonts\Nunito-Light.ttf" />
+    <None Remove="resources\fonts\Nunito-LightItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-Medium.ttf" />
+    <None Remove="resources\fonts\Nunito-MediumItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-Regular.ttf" />
+    <None Remove="resources\fonts\Nunito-SemiBold.ttf" />
+    <None Remove="resources\fonts\Nunito-SemiBoldItalic.ttf" />
+    <None Remove="resources\fonts\Nunito-VariableFont_wght.ttf" />
+    <None Remove="resources\images\background.jpg" />
+    <None Remove="resources\images\close-icon-white.png" />
+    <None Remove="resources\images\close-icon.png" />
+    <None Remove="resources\images\icon.png" />
+    <None Remove="resources\images\maximize-icon-white.png" />
+    <None Remove="resources\images\maximize-icon.png" />
+    <None Remove="resources\images\minimize-icon-white.png" />
+    <None Remove="resources\images\minimize-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\fonts\Nunito-Black.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-BlackItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-BoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-ExtraBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-ExtraLight.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-ExtraLightItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-Italic-VariableFont_wght.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-Italic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-LightItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-Medium.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-MediumItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-SemiBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\fonts\Nunito-VariableFont_wght.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\close-icon-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\close-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\maximize-icon-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\maximize-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\minimize-icon-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\minimize-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\images\icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="resources\background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\theme.dat">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
